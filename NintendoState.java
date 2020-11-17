@@ -1,19 +1,23 @@
 /**
  * 
  * @author Cole Burnworth
- *
+ * Contains methods for the NintendoState of the GameConsole
  */
 import java.util.*;
 public class NintendoState implements State {
 	private GameConsole gameConsole;
 	private ArrayList<String> games = new ArrayList<>(Arrays.asList("Zelda ", "Super Smash Bros ", "Super Mario ", "Mario Kart ", "Animal Crossing "));
 	
+	/**
+	 * Creates an instance of the gameConsole for the NintendoState
+	 * @param gameConsole
+	 */
 	public NintendoState(GameConsole gameConsole) {
 		this.gameConsole = gameConsole;
 	}
 	
 	/**
-	 * Displays message from pressing home button
+	 * Displays message from pressing home button and sets the state accordingly
 	 */
 	@Override
 	public void pressHomeButton() {
@@ -27,11 +31,11 @@ public class NintendoState implements State {
 	 */
 	@Override
 	public void pressNintendoButton() {
-		//System.out.println("You are already viewing Nintendo");
+		System.out.println("You are already viewing Nintendo");
 	}
 	
 	/**
-	 * Displays message from pressing the XBox button
+	 * Displays message from pressing the XBox button and sets the state accordingly
 	 */
 	@Override
 	public void pressXBoxButton() {

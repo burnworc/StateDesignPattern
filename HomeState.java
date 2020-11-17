@@ -6,6 +6,10 @@
 public class HomeState implements State {
 	private GameConsole gameConsole;
 	
+	/**
+	 * Creates an instance of the gameConsole for HomeState
+	 * @param gameConsole
+	 */
 	public HomeState(GameConsole gameConsole) {
 		this.gameConsole = gameConsole;
 	}
@@ -19,7 +23,7 @@ public class HomeState implements State {
 	}
 	
 	/**
-	 * Displays message from pressing Nintendo button
+	 * Displays message from pressing Nintendo button and sets the state accordingly
 	 */
 	@Override
 	public void pressNintendoButton() {
@@ -28,7 +32,7 @@ public class HomeState implements State {
 	}
 	
 	/**
-	 * Displays message from pressing the XBox button
+	 * Displays message from pressing the XBox button and sets the state accordingly
 	 */
 	@Override
 	public void pressXBoxButton() {
